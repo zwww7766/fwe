@@ -38,7 +38,7 @@ npm install --save-dev babel-preset-es2015
 - 本地安装```npm install --save-dev @babel/core @babel/node ``` 
 - 本地更新```npx babel-upgrade --write --install```
 
-#### useage
+#### 开始运行
 - ```./init.sh```
 - ```babel-node server.js```
 - ```npm run fix-memory-limit``` 增加内存上线

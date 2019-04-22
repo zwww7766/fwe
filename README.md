@@ -1,4 +1,4 @@
-# fwe
+# fast-web-engine
 一个基于nodejs、express的webapi快速开发脚手架
 
 # 目前实现的功能

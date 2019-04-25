@@ -7,7 +7,7 @@ var https = require('https')
 var urlEnc = require('urlencode');
 var wechat_options_template = {hostname: 'api.weixin.qq.com', port: 443, method: 'GET'};
 import redis from '../centerLayer/redisLayer'
-//
+//sth
 var app = {
 }
 function deepCopy(obj) {

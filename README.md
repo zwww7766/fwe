@@ -49,9 +49,18 @@ mapBind({
 })
 module.exports = {url: 'user',router: router, status: 1}
 ```
-- 自动绑定逻辑：fwe/bind-engine 会按照约定从logic开始逐层解析，所以每个文件夹都有个与之同名的js文件确定这层的url和状态。
-- 接口定制逻辑：mapBind下get则是get方法，以key-value形式定义路由逻辑。must定义检测入参，token也在此检测。
-- 对外映射逻辑：config下app对象
+- 自动绑定逻辑：fwe/bind-engine 会按照约定从logic开始逐层解析，每个文件夹都拥有一个与之同名的js文件确定此层的url和状态。
+- 接口定制逻辑：mapBind下get内是自定义get接口，以key-value形式定义路由逻辑。must定义检测入参，token也在此检测。
+- 对外映射逻辑：config下app对象:
+```
+app:{
+        mode:'release',
+        port:3001,
+        session:true,
+        version:1.0,
+        //todo 设置全局dev、 pro环境
+    },
+```
 - ```babel-node server.js``` 后 访问 ```localhost:3002/api/1.0/helloword```请求就会被路由到user内定义的接口
 #### babel
 ```$xslt

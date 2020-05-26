@@ -4,8 +4,8 @@
 const OSS = require('ali-oss')
 var STS = OSS.STS;
 var sts = new STS({
-    accessKeyId: 'LTAIEeLRE2dGYfCV',
-    accessKeySecret: 'E2UmH0EvYNqX1N7XrnP08VrcaHPpky'
+    accessKeyId: '',
+    accessKeySecret: ''
 })
 async function assumeRole () {
     try {
